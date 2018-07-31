@@ -1,7 +1,7 @@
 genetic_circuit_scoring
 ########################################
 
-gls_score_circuit is a Python app for scoring circuit mappings produced from genetic logic synthesis. It defines a class called CircuitMapping that includes methods for the following:
+gls_score_circuit is a Python app for scoring circuit mappings produced from genetic logic synthesis. It includes a class called CircuitMapping that defines methods for the following:
 
 1. Loading a circuit mapping.
 
@@ -16,7 +16,7 @@ gls_score_circuit is a Python app for scoring circuit mappings produced from gen
 Specification
 =============
 
-The arguments to gls_score_circuit app are listed below.
+The arguments to gls_score_circuit Python app are listed below.
 
 .. code-block:: powershell
 
@@ -27,7 +27,7 @@ The arguments to gls_score_circuit app are listed below.
 Examples
 ========
 
-An example of running gls_score_circuit from the Command Prompt after installing it and changing your working directory to genetic_circuit_scoring is shown below.
+An example of running the gls_score_circuit Python app from the Command Prompt after installing it and changing your working directory to genetic_circuit_scoring is shown below.
 
 .. code-block:: powershell
 
@@ -37,10 +37,10 @@ Equivalently, you can import the CircuitMapping class and use it as shown:
 
 .. code-block:: python
 
-	import json
-	from genetic_circuit_scoring import CircuitMapping
+    import json
+    from genetic_circuit_scoring import CircuitMapping
 
-	with open('examples\genetic_gate_library.json') as library_file:
+    with open('examples\genetic_gate_library.json') as library_file:
         library_data = json.load(library_file)
     with open('examples\majority_mapping.json') as majority_mapping_file:
         majority_mapping_data = json.load(majority_mapping_file)
@@ -50,7 +50,7 @@ Equivalently, you can import the CircuitMapping class and use it as shown:
 
     circuit_mapping.score()
 
-If you wish to tune a circuit mapping before scoring, simply include the -t argument to the app like so:
+If you wish to tune a circuit mapping before scoring, simply include the -t argument to the gls_score_circuit Python app like so:
 
 .. code-block:: powershell
 
