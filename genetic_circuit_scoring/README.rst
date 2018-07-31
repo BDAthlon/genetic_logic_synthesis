@@ -16,7 +16,7 @@ gls_score_circuit is a Python app for scoring circuit mappings produced from gen
 Specification
 =============
 
-The arguments to gls_score_circuit app are listed below. Optional arguments have their default values listed as well.
+The arguments to gls_score_circuit app are listed below.
 
 .. code-block:: powershell
 
