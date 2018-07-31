@@ -1,0 +1,224 @@
+{
+    "gates": [
+        {
+            "id": "A1_AmtR",
+            "type": "NOT",
+            "ymax": 3.8,
+            "ymin": 0.06,
+            "k": 0.07,
+            "n": 1.6,
+            "factors": [
+                "AmtR"
+            ]
+        },
+        {
+            "id": "B1_BM3R1",
+            "type": "NOT",
+            "ymax": 0.5,
+            "ymin": 0.004,
+            "k": 0.04,
+            "n": 3.4,
+            "factors": [
+                "BM3R1"
+            ]
+        },
+        {
+            "id": "B2_BM3R1",
+            "type": "NOT",
+            "ymax": 0.5,
+            "ymin": 0.005,
+            "k": 0.15,
+            "n": 2.9,
+            "factors": [
+                "BM3R1"
+            ]
+        },
+        {
+            "id": "B3_BM3R1",
+            "type": "NOT",
+            "ymax": 0.8,
+            "ymin": 0.01,
+            "k": 0.26,
+            "n": 3.4,
+            "factors": [
+                "BM3R1"
+            ]
+        },
+        {
+            "id": "E1_BetI",
+            "type": "NOT",
+            "ymax": 3.8,
+            "ymin": 0.07,
+            "k": 0.41,
+            "n": 2.4,
+            "factors": [
+                "BetI"
+            ]
+        },
+        {
+            "id": "F1_AmeR",
+            "type": "NOT",
+            "ymax": 3.8,
+            "ymin": 0.2,
+            "k": 0.09,
+            "n": 1.4,
+            "factors": [
+                "AmeR"
+            ]
+        },
+        {
+            "id": "H1_HlyIIR",
+            "type": "NOT",
+            "ymax": 2.5,
+            "ymin": 0.07,
+            "k": 0.19,
+            "n": 2.6,
+            "factors": [
+                "HlyIIR"
+            ]
+        },
+        {
+            "id": "I1_IcaRA",
+            "type": "NOT",
+            "ymax": 2.2,
+            "ymin": 0.08,
+            "k": 0.1,
+            "n": 1.4,
+            "factors": [
+                "IcaRA"
+            ]
+        },
+        {
+            "id": "L1_LitR",
+            "type": "NOT",
+            "ymax": 4.3,
+            "ymin": 0.07,
+            "k": 0.05,
+            "n": 1.7,
+            "factors": [
+                "LitR"
+            ]
+        },
+        {
+            "id": "N1_LmrA",
+            "type": "NOT",
+            "ymax": 2.2,
+            "ymin": 0.2,
+            "k": 0.18,
+            "n": 2.1,
+            "factors": [
+                "AmtR"
+            ]
+        },
+        {
+            "id": "P1_PhlF",
+            "type": "NOT",
+            "ymax": 3.9,
+            "ymin": 0.01,
+            "k": 0.03,
+            "n": 4.0,
+            "factors": [
+                "PhlF"
+            ]
+        },
+        {
+            "id": "P2_PhlF",
+            "type": "NOT",
+            "ymax": 4.1,
+            "ymin": 0.02,
+            "k": 0.13,
+            "n": 3.9,
+            "factors": [
+                "PhlF"
+            ]
+        },
+        {
+            "id": "P3_PhlF",
+            "type": "NOT",
+            "ymax": 6.8,
+            "ymin": 0.02,
+            "k": 0.23,
+            "n": 4.2,
+            "factors": [
+                "PhlF"
+            ]
+        },
+        {
+            "id": "Q1_QacR",
+            "type": "NOT",
+            "ymax": 2.4,
+            "ymin": 0.01,
+            "k": 0.05,
+            "n": 2.7,
+            "factors": [
+                "QacR"
+            ]
+        },
+        {
+            "id": "Q2_QacR",
+            "type": "NOT",
+            "ymax": 2.8,
+            "ymin": 0.03,
+            "k": 0.21,
+            "n": 2.4,
+            "factors": [
+                "QacR"
+            ]
+        },
+        {
+            "id": "R1_PsrA",
+            "type": "NOT",
+            "ymax": 5.9,
+            "ymin": 0.2,
+            "k": 0.19,
+            "n": 1.8,
+            "factors": [
+                "PsrA"
+            ]
+        },
+        {
+            "id": "S1_SrpR",
+            "type": "NOT",
+            "ymax": 1.3,
+            "ymin": 0.003,
+            "k": 0.01,
+            "n": 2.9,
+            "factors": [
+                "SrpR"
+            ]
+        },
+        {
+            "id": "S2_SrpR",
+            "type": "NOT",
+            "ymax": 2.1,
+            "ymin": 0.003,
+            "k": 0.04,
+            "n": 2.6,
+            "factors": [
+                "SrpR"
+            ]
+        },
+        {
+            "id": "S3_SrpR",
+            "type": "NOT",
+            "ymax": 2.1,
+            "ymin": 0.004,
+            "k": 0.06,
+            "n": 2.8,
+            "factors": [
+                "SrpR"
+            ]
+        },
+        {
+            "id": "S4_SrpR",
+            "type": "NOT",
+            "ymax": 2.1,
+            "ymin": 0.007,
+            "k": 0.1,
+            "n": 2.8,
+            "factors": [
+                "SrpR"
+            ]
+        }
+    ]
+}

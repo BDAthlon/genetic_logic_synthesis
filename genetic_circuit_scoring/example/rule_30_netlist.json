@@ -1,0 +1,110 @@
+{
+    "gates": [
+        {
+            "id": "n0",
+            "type": "OR"
+        },
+        {
+            "id": "n1",
+            "type": "NOT"
+        },
+        {
+            "id": "n2",
+            "type": "NOT"
+        },
+        {
+            "id": "n3",
+            "type": "NOT"
+        },
+        {
+            "id": "n4",
+            "type": "OR"
+        },
+        {
+            "id": "n5",
+            "type": "NOT"
+        },
+        {
+            "id": "n6",
+            "type": "OR"
+        },
+        {
+            "id": "n7",
+            "type": "NOT"
+        },
+        {
+            "id": "n8",
+            "type": "OR"
+        }
+    ],
+    "inputs": [
+        ["A", "B", "C"],
+        [0, 0, 0],
+        [1, 0, 0],
+        [0, 1, 0],
+        [1, 1, 0],
+        [0, 0, 1],
+        [1, 0, 1],
+        [0, 1, 1],
+        [1, 1, 1]
+    ],
+    "outputs": ["Y"],
+    "connections": [
+        {
+            "source": "n8",
+            "sink": "Y"
+        },
+        {
+            "source": "n7",
+            "sink": "n8"
+        },
+        {
+            "source": "n5",
+            "sink": "n8"
+        },
+        {
+            "source": "n6",
+            "sink": "n7"
+        },
+        {
+            "source": "n3",
+            "sink": "n6"
+        },
+        {
+            "source": "n2",
+            "sink": "n6"
+        },
+        {
+            "source": "n4",
+            "sink": "n5"
+        },
+        {
+            "source": "n1",
+            "sink": "n4"
+        },
+        {
+            "source": "C",
+            "sink": "n4"
+        },
+        {
+            "source": "n1",
+            "sink": "n3"
+        },
+        {
+            "source": "C",
+            "sink": "n2"
+        },
+        {
+            "source": "n0",
+            "sink": "n1"
+        },
+        {
+            "source": "A",
+            "sink": "n0"
+        },
+        {
+            "source": "B",
+            "sink": "n0"
+        }
+    ]
+}

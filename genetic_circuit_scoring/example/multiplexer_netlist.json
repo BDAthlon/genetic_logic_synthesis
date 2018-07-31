@@ -1,0 +1,90 @@
+{
+    "gates": [
+        {
+            "id": "n0",
+            "type": "NOT"
+        },
+        {
+            "id": "n1",
+            "type": "OR"
+        },
+        {
+            "id": "n2",
+            "type": "NOT"
+        },
+        {
+            "id": "n3",
+            "type": "OR"
+        },
+        {
+            "id": "n4",
+            "type": "NOT"
+        },
+        {
+            "id": "n5",
+            "type": "OR"
+        },
+        {
+            "id": "n6",
+            "type": "NOT"
+        }
+    ],
+    "inputs": [
+        ["A", "B", "C"],
+        [0, 0, 0],
+        [1, 0, 0],
+        [0, 1, 0],
+        [1, 1, 0],
+        [0, 0, 1],
+        [1, 0, 1],
+        [0, 1, 1],
+        [1, 1, 1]
+    ],
+    "outputs": ["Y"],
+    "connections": [
+        {
+            "source": "n6",
+            "sink": "Y"
+        },
+        {
+            "source": "n5",
+            "sink": "n6"
+        },
+        {
+            "source": "n4",
+            "sink": "n5"
+        },
+        {
+            "source": "n2",
+            "sink": "n5"
+        },
+        {
+            "source": "n3",
+            "sink": "n4"
+        },
+        {
+            "source": "n0",
+            "sink": "n3"
+        },
+        {
+            "source": "A",
+            "sink": "n3"
+        },
+        {
+            "source": "n1",
+            "sink": "n2"
+        },
+        {
+            "source": "B",
+            "sink": "n1"
+        },
+        {
+            "source": "C",
+            "sink": "n1"
+        },
+        {
+            "source": "B",
+            "sink": "n0"
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "gates": [
+        {
+            "id": "n0",
+            "type": "NOT"
+        },
+        {
+            "id": "n1",
+            "type": "OR"
+        },
+        {
+            "id": "n2",
+            "type": "NOT"
+        },
+        {
+            "id": "n3",
+            "type": "NOT"
+        },
+        {
+            "id": "n4",
+            "type": "NOT"
+        },
+        {
+            "id": "n5",
+            "type": "OR"
+        },
+        {
+            "id": "n6",
+            "type": "NOT"
+        },
+        {
+            "id": "n7",
+            "type": "OR"
+        },
+        {
+            "id": "n8",
+            "type": "NOT"
+        },
+        {
+            "id": "n9",
+            "type": "OR"
+        }
+    ],
+    "inputs": [
+        ["A", "B", "C"],
+        [0, 0, 0],
+        [1, 0, 0],
+        [0, 1, 0],
+        [1, 1, 0],
+        [0, 0, 1],
+        [1, 0, 1],
+        [0, 1, 1],
+        [1, 1, 1]
+    ],
+    "outputs": ["Y"],
+    "connections": [
+        {
+            "source": "n9",
+            "sink": "Y"
+        },
+        {
+            "source": "n8",
+            "sink": "n9"
+        },
+        {
+            "source": "n6",
+            "sink": "n9"
+        },
+        {
+            "source": "n7",
+            "sink": "n8"
+        },
+        {
+            "source": "n4",
+            "sink": "n7"
+        },
+        {
+            "source": "n3",
+            "sink": "n7"
+        },
+        {
+            "source": "n5",
+            "sink": "n6"
+        },
+        {
+            "source": "n2",
+            "sink": "n5"
+        },
+        {
+            "source": "n0",
+            "sink": "n5"
+        },
+        {
+            "source": "C",
+            "sink": "n4"
+        },
+        {
+            "source": "B",
+            "sink": "n3"
+        },
+        {
+            "source": "n1",
+            "sink": "n2"
+        },
+        {
+            "source": "B",
+            "sink": "n1"
+        },
+        {
+            "source": "C",
+            "sink": "n1"
+        },
+        {
+            "source": "A",
+            "sink": "n0"
+        }
+    ]
+}
