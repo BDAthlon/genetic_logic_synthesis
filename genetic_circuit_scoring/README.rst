@@ -31,30 +31,35 @@ An example of running the gls_score_circuit Python app from the Command Prompt a
 
 .. code-block:: powershell
 
-    gls_score_circuit -l 'examples\genetic_gate_library.json' -m 'examples\majority_mapping.json'
+    gls_score_circuit -l 'example\genetic_gate_library.json' -m 'example\majority_mapping.json'
 
-Equivalently, you can import the CircuitMapping class and use it as shown:
+Equivalently, you can import the CircuitMapping class and use it as show below. Note that you do not have to create a new CircuitMapping to score new circuit mappings. Simply call the map function again with the new circuit mapping and then call the score function.
 
 .. code-block:: python
 
     import json
     from genetic_circuit_scoring import CircuitMapping
 
-    with open('examples\genetic_gate_library.json') as library_file:
+    with open('example\genetic_gate_library.json') as library_file:
         library_data = json.load(library_file)
-    with open('examples\majority_mapping.json') as majority_mapping_file:
+    with open('example\majority_mapping.json') as majority_mapping_file:
         majority_mapping_data = json.load(majority_mapping_file)
+    with open('example\rule_30_mapping.json') as rule_30_mapping_file:
+        rule_30_mapping_data = json.load(rule_30_mapping_file)
 
     circuit_mapping = CircuitMapping(library_data)
-    circuit_mapping.map(majority_mapping_data)
 
+    circuit_mapping.map(majority_mapping_data)
+    circuit_mapping.score()
+
+    circuit_mapping.map(rule_30_mapping_data)
     circuit_mapping.score()
 
 If you wish to tune a circuit mapping before scoring, simply include the -t argument to the gls_score_circuit Python app like so:
 
 .. code-block:: powershell
 
-    gls_score_circuit -l 'examples\genetic_gate_library.json' -m 'examples\majority_mapping.json' -t 'examples\majority_tuning.json'
+    gls_score_circuit -l 'example\genetic_gate_library.json' -m 'example\majority_mapping.json' -t 'example\majority_tuning.json'
 
 Equivalently, you can call the tune method of the CircuitMapping class:
 
@@ -63,11 +68,11 @@ Equivalently, you can call the tune method of the CircuitMapping class:
     import json
     from genetic_circuit_scoring import CircuitMapping
 
-    with open('examples\genetic_gate_library.json') as library_file:
+    with open('example\genetic_gate_library.json') as library_file:
         library_data = json.load(library_file)
-    with open('examples\majority_mapping.json') as majority_mapping_file:
+    with open('example\majority_mapping.json') as majority_mapping_file:
         majority_mapping_data = json.load(majority_mapping_file)
-    with open('examples\majority_tuning.json') as majority_tuning_file:
+    with open('example\majority_tuning.json') as majority_tuning_file:
         majority_tuning_data = json.load(majority_tuning_file)
 
     circuit_mapping = CircuitMapping(library_data)
