@@ -27,7 +27,7 @@ The arguments to gls_score_circuit app are listed below. Optional arguments have
 Examples
 ========
 
-An example of running gls_score_circuit from the Command Prompt after installing it and changing your working directory to genetic_circuit_scoring is shown below. Bracketed argument values should be replaced with your own.
+An example of running gls_score_circuit from the Command Prompt after installing it and changing your working directory to genetic_circuit_scoring is shown below.
 
 .. code-block:: powershell
 
@@ -50,3 +50,29 @@ Equivalently, you can import the CircuitMapping class and use it as shown:
 
     circuit_mapping.score()
 
+If you wish to tune a circuit mapping before scoring, simply include the -t argument to the app like so:
+
+.. code-block:: powershell
+
+    gls_score_circuit -l 'examples\genetic_gate_library.json' -m 'examples\majority_mapping.json' -t 'examples\majority_tuning.json'
+
+Equivalently, you can call the tune method of the CircuitMapping class:
+
+.. code-block:: python
+
+    import json
+    from genetic_circuit_scoring import CircuitMapping
+
+    with open('examples\genetic_gate_library.json') as library_file:
+        library_data = json.load(library_file)
+    with open('examples\majority_mapping.json') as majority_mapping_file:
+        majority_mapping_data = json.load(majority_mapping_file)
+    with open('examples\majority_tuning.json') as majority_tuningfile:
+        majority_tuning_data = json.load(majority_tuningfile)
+
+    circuit_mapping = CircuitMapping(library_data)
+    circuit_mapping.map(majority_mapping_data)
+
+    circuit_mapping.tune(majority_tuning_data)
+
+    circuit_mapping.score()
