@@ -67,8 +67,8 @@ Equivalently, you can call the tune method of the CircuitMapping class:
         library_data = json.load(library_file)
     with open('examples\majority_mapping.json') as majority_mapping_file:
         majority_mapping_data = json.load(majority_mapping_file)
-    with open('examples\majority_tuning.json') as majority_tuningfile:
-        majority_tuning_data = json.load(majority_tuningfile)
+    with open('examples\majority_tuning.json') as majority_tuning_file:
+        majority_tuning_data = json.load(majority_tuning_file)
 
     circuit_mapping = CircuitMapping(library_data)
     circuit_mapping.map(majority_mapping_data)
